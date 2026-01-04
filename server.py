@@ -48,7 +48,8 @@ def get_weather():
         humidity=f"{weather_data['main']['humidity']:2.0f}",
         pressure=f"{weather_data['main']['pressure']:4.0f}",
         wind_speed=f"{weather_data['wind']['speed']:.1f}",
-        #wind_gust=f"{weather_data['wind']['gust']:.1f}"
+        lat=f"{weather_data['coord']['lat']:.4f}",
+        lon=f"{weather_data['coord']['lon']:.4f}"
         )
     
 
